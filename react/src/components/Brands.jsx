@@ -1,11 +1,14 @@
 import React from 'react';
+import Brand1 from '../images/brand-1.svg'
+
+
 
 const Brands = () => {
   return (
     <section id="brands">
       <div className="container2"> 
         <div id="brand-1" className="brand-box"> 
-          <img src="images/uppgift HTML & CSS/brand-1.svg" alt="Brand 1" /> 
+          <img src={Brand1} alt="Brand 1" /> 
         </div>
         <div id="brand-2" className="brand-box"> 
           <img src="images/uppgift HTML & CSS/brand-2.svg" alt="Brand 2" />
