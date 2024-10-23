@@ -121,7 +121,7 @@ body {
 
 
 
-/* Detta är alla länkar */
+
 a {
 color: var(--color-primary);
 text-decoration: none;
@@ -131,7 +131,7 @@ a:hover {
   color: var(--color-primary);
   text-decoration: underline;
 }
- /* Detta är linjen längst upp på sidan */
+
  .navbar {
   display: flex;
   justify-content: space-between;
@@ -143,7 +143,7 @@ a:hover {
 
 #wrapper {
 
-/* Detta är features-iconen */
+
 .nav-link {
   color: var(--color-black);
   font-weight: 600;
@@ -151,28 +151,28 @@ a:hover {
   margin-left: 5rem
   
 }
-/* Detta är när man för musen över ikonen */
+
 .nav-link:hover {
   color: var(--color-primary);
   text-decoration: underline;
 }
-/* Detta är silicon-loggan */
+
 #logo {
   padding-left: 0rem;
 }
 
-/* Detta är sign in knappen */
+
 .btn-primary {
   background-color: var(--color-primary);
   color: var(--color-white);
   border-radius: 8px;
   padding: 8px 20px;
-  display: inline-flex; /* Använd inline-flex för att inte ta upp full bredd */
-  flex-direction: row; /* Se till att barnen ligger vågrätt */
+  display: inline-flex; 
+  flex-direction: row; 
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  white-space: nowrap; /* Förhindra att texten bryts till nästa rad */
+  white-space: nowrap; 
 }
 
 .btn-primary:hover {
@@ -189,7 +189,7 @@ text-decoration: none;
     border: none;
     font-size: 2rem; 
  }
-/* Detta är darkmode knappen */
+
 .btn-toggle-switch {
     display: flex;
     align-items: center;
@@ -260,7 +260,7 @@ text-decoration: none;
 }
 
 
-/* Detta är apple dowloadappen */
+
 .btn-download-app {
   background-color: var(--color-black);
   color: var(--color-white);
@@ -276,7 +276,7 @@ text-decoration: none;
   color: var(--color-white);
   text-decoration: none;
   }
-/* Detta är cirkeln till discover more knappen */
+
   .btn-circle {
     height: 44px;
     width: 44px;
@@ -302,7 +302,7 @@ text-decoration: none;
 
 #hero1 {
   background: linear-gradient(0deg, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%);
-  width: 100vw; /* Full bredd över hela viewporten */
+  width: 100vw; 
   display: flex;
   justify-content: center;
   
@@ -378,9 +378,9 @@ text-decoration: none;
   }
 }
 
-/* Detta är mobilerna i hero */
+
 .images {
-  grid-column: 2; /* Lägger bilderna i den andra kolumnen */
+  grid-column: 2; 
   position: relative;
   margin-left: 35rem;
 }
@@ -398,7 +398,7 @@ text-decoration: none;
 }
 }
 
-/* Detta är alla logos på rad under hero*/
+
 
 
 
@@ -429,32 +429,31 @@ text-decoration: none;
 }
 @media (max-width: 720px) {
   .container2 {
-    flex-direction: column; /* Stapla elementen vertikalt på små desktops */
+    flex-direction: column; 
     padding-left: 0; 
     gap: 1rem;
   }
 
   .brand-box {
-    width: 100%; /* Använd hela skärmens bredd */
+    width: 100%; 
     height: auto;
     padding: 1rem;
-    margin-bottom: 1rem; /* Mellanrum mellan boxarna */
+    margin-bottom: 1rem;
     margin: 2rem;
   }
 }
 
- /* app features sidan */
  #page2 {
   #p2 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Skapar tre lika stora kolumner */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 10rem; 
     margin: auto;
     margin-bottom: 6rem;
     margin-top: 6rem;
-    width: 100%; /* Se till att grid fyller sitt container */
+    width: 100%; 
     
-/* mobilen i features */
+
     #app-preview {
       display: block;
       height: auto;
@@ -464,7 +463,7 @@ text-decoration: none;
   
     }
 
-   /* För containern som håller alla feature items */
+  
 .feature-items {
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
@@ -474,14 +473,14 @@ text-decoration: none;
   
 }
 
-/* För varje individuellt feature-item */
+
 .feature-item-li {
   display: flex;
   align-items: center; 
   gap: 1rem; 
 }
 
-/* Bakgrunden på ikonerna */
+
 .icon-holder {
   background-color: var(--color-gray100);
   padding: 12px;
@@ -492,7 +491,7 @@ text-decoration: none;
   align-items: center;
 }
 
-/* Text-stil för varje feature */
+
 .text-item h4 {
   font-size: 20px;
   margin: 0;
@@ -517,13 +516,13 @@ text-decoration: none;
  }   
 
 }
- /* tre mobiler på rad */
+
 
 #page3 {
   display: flex;
   flex-direction: column;
-  justify-content: center;  /* Vertikal centrering */
-  align-items: center;      /* Horisontell centrering */
+  justify-content: center;  
+  align-items: center;     
   height: 100%; 
   padding: 2rem 0;
   text-align: center;
@@ -546,18 +545,17 @@ text-decoration: none;
   margin-bottom: 2rem;
 }
 
-/* Individuella bildbehållare */
+
 .image-container {
   flex: 1;
   text-align: center;
 }
 
 .image-container img {
-  max-width: 100%; /* Anpassar bredden */
-  height: auto; 
+  max-width: 100%; 
 }
 
-/* Text och beskrivning efter bilderna */
+
 #transactions {
   margin-top: 1rem;
 }
@@ -573,10 +571,9 @@ text-decoration: none;
   font-size: 14px;
   line-height: 1.6;
   max-width: 500px;
-  margin: 0 auto; /* Centrerar texten */
+  margin: 0 auto; 
 }
 
-/* Responsiv design */
 @media (max-width: 720px) {
   #three-iphones {
     flex-direction: column;
@@ -600,7 +597,7 @@ text-decoration: none;
 
 
 
-/* Sida 4 tog jag hjälp av chat gtp att få ihop tillsammans med egna försök */
+
 
 #page4 {
   max-width: 720px;
@@ -615,16 +612,15 @@ text-decoration: none;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  flex-wrap: wrap; /* Gör att raderna anpassar sig till mindre skärmar */ 
+  flex-wrap: wrap; 
 }
 
 .item-left, 
 .image-container, 
 .p4-text {
-  min-width: 0; /* Förhindra att flex-elementen blir för små */
+  min-width: 0; 
 }
 
-/* Vänstra textdelen */
 .item-left {
   margin-left: 0;
 }
@@ -683,20 +679,20 @@ text-decoration: none;
   margin-left: 10px;
 }
 
-/* Bildbehållare */
+
 .image-container {
   flex: 1;
   text-align: center;
 }
 
 .image-container img {
-    max-width: 100%; /* Begränsa bildstorleken till att hålla sig inom förälderns bredd */
+    max-width: 100%; 
     height: auto;
     border-radius: 10px;
 }
 
 
-/* Andra delen, text och bild */
+
 .p4-text {
   flex: 1;
   
@@ -720,7 +716,7 @@ text-decoration: none;
 }
 
 .p4-ul-2 .p4-li-2 img {
-  width: 24px; /* Anpassa storleken på ikonerna */
+  width: 24px; 
   margin-right: 1rem;
   background-color: #E2E5F1;
   
@@ -751,14 +747,14 @@ text-decoration: none;
 
 @media (max-width: 720px) {
   .p4-flex {
-    flex-direction: column; /* Ändra layout till kolumn för små skärmar */
+    flex-direction: column; 
     align-items: flex-start; 
   }
 
   .item-left, 
   .p4-text, 
   .image-container {
-    width: 100%; /* Låt varje sektion ta upp 100% av bredden på små skärmar */
+    width: 100%; 
     margin-right: 0;
   }
 
@@ -773,7 +769,7 @@ text-decoration: none;
 
   .p4-ul-1 .p4-li-1, 
   .p4-ul-2 .p4-li-2 {
-    flex-direction: column; /* Ändra layout till kolumn för listor */
+    flex-direction: column; 
     align-items: flex-start;
   }
 
@@ -791,7 +787,7 @@ text-decoration: none;
 }
 
 
-/* sida 5 clients */
+
 
 #page5 {
   background-color: var(--color-gray100);
@@ -875,13 +871,13 @@ text-decoration: none;
   font-size: 0.9rem;
   color: #565973;
 }
-/* sista sidan*/
+
 
 body {
   font-family: 'Manrope', sans-serif;
   line-height: 1.6;
   color: var(--color-black);
-  background-color: var(--color-white); /* Ljusare bakgrund */
+  background-color: var(--color-white); 
 }
 
 h2 {
@@ -914,7 +910,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* FAQ Section */
+
 #page6 {
   display: flex;
   flex-direction: column;
@@ -984,7 +980,7 @@ a:hover {
   font-size: 0.875rem;
 }
 
-/* Accordion Styles */
+
 .faq-right {
   width: 55%;
 }
@@ -992,8 +988,8 @@ a:hover {
 .accordion {
   width: 100%;
   background-color: var(--color-white);
-  border-radius: 16px; /* Mer rundade hörn */
-  box-shadow: none; /* Tar bort skugga från hela accordionen */
+  border-radius: 16px; 
+  box-shadow: none; 
 }
 
 .accordion-item {
@@ -1002,7 +998,7 @@ a:hover {
   margin-bottom: 10px; 
   padding: 1px; 
   background-color: var(--color-white); 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Skugga på utsidan */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
   transition: background-color 0.3s ease, box-shadow 0.3s ease; 
 }
 
@@ -1037,7 +1033,7 @@ a:hover {
 }
 
 .accordion-title img {
-  width: 40px; /* Gör knapparna större */
+  width: 40px;
   height: 40px; 
   
 }
@@ -1052,16 +1048,16 @@ a:hover {
 }
 
 .accordion-item.open .accordion-content {
-  max-height: 2000px; /* Tillräckligt stor för att täcka allt innehåll */
+  max-height: 2000px; 
 }
 
 .accordion-item .accordion-content {
-  max-height: 0; /* Gömmer innehållet */
+  max-height: 0; 
   display: block;
 }
 
 
-/* Newsletter Section */
+
 #newsletter-section {
   background-color: var(--color-white);
   padding: 3rem 1rem;
@@ -1123,7 +1119,7 @@ a:hover {
   border-radius: 4px;
   cursor: pointer;
 }
-/* Styling för kuvertikonen */
+
 .newsletter-input .input-icon {
   position: relative;
   display: flex;
@@ -1132,13 +1128,13 @@ a:hover {
 
 .newsletter-input .input-icon i {
   position: absolute;
-  left: 10px; /* Placera ikonen inuti inputfältet */
-  color: #B4B7C9; /* Färgen på ikonen */
+  left: 10px; 
+  color: #B4B7C9; 
   font-size: 1rem;
 }
 
 
-/* Detta är texten allra längst ner på sidan*/
+
 footer {
   font-size: 12px;
   padding-top: 1rem;
@@ -1158,7 +1154,7 @@ footer {
   }
 }
 
-/*contact page*/
+
 
 .contact-container {
   display: flex;
@@ -1221,7 +1217,7 @@ footer {
   margin-left: 10px;
 }
 
-/* Form Section */
+
 .contact-form {
   width: 40%;
   background-color: var(--color-white);
@@ -1229,9 +1225,9 @@ footer {
   margin-right: 8.5rem;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  position: relative; /* Add relative positioning */
-  top: 90px; /* Adjust this value to control how far down the form is moved */
-  z-index: 1; /* Ensure the form is in front of other elements */
+  position: relative; 
+  top: 90px; 
+  z-index: 1; 
 }
 
 .contact-form h2 {
@@ -1269,7 +1265,7 @@ button {
   font-size: 16px;
 }
 
-/* Map Section */
+
 .map-address-container {
   display: flex;
   flex-direction: column 1fr;
@@ -1311,7 +1307,7 @@ button {
   color: var(--color-primary)
 }
 
-/* Social Media Icons */
+
 .socials {
   text-align: center;
   margin-top: 3rem;
