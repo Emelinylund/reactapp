@@ -1,4 +1,8 @@
 import React from 'react';
+import Sendmoney from '../images/image send money to.svg'
+import Contactcard from '../images/kontaktokort.svg'
+import Cardicon from '../images/credit-card.svg'
+import Walleticon from '../images/wallet.svg'
 
 const Page4 = () => {
   return (
@@ -25,25 +29,25 @@ const Page4 = () => {
           </div>
 
           <div className="image-container">
-            <img src="images/uppgift HTML & CSS/image send money to.svg" alt="send-diagram" />
+            <img src={Sendmoney} alt="send-diagram" />
           </div>
 
           <div className="p4-flex">
             <div className="image-container">
-              <img src="images/uppgift HTML & CSS/kontaktokort.svg" alt="send-contacts" />
+              <img src={Contactcard} alt="send-contacts" />
             </div>
             <div className="p4-text">
               <h2>Receive payment from<br /> international bank details</h2>
               <ul className="p4-ul-2">
                 <li className="p4-li-2">
                   <div className="icon-holder">
-                    <img src="images/uppgift HTML & CSS/credit-card.svg" alt="card-icon" />
+                    <img src={Cardicon} alt="card-icon" />
                   </div>
                   <p>Manage your payments online.<br /> Mollis congue egestas egestas<br /> fermentum fames.</p>
                 </li>
                 <li className="p4-li-2">
                   <div className="icon-holder">
-                    <img src="images/uppgift HTML & CSS/wallet.svg" alt="wallet-icon" />
+                    <img src={Walleticon} alt="wallet-icon" />
                   </div>
                   <p>A elementur and imperdiet enim,<br /> pretium etiam facilisi aenean<br /> quam mauris.</p>
                 </li>

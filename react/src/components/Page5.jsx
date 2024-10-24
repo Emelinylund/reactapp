@@ -1,4 +1,9 @@
 import React from 'react';
+import Quoteicon from '../images/quotes.svg'
+import Stars from '../images/rating.svg'
+import Fannie from '../images/Fannie.svg'
+import Stars2 from '../images/rating (1).svg'
+import Albert from '../images/albert.svg'
 
 const Page5 = () => {
   return (
@@ -10,16 +15,16 @@ const Page5 = () => {
         <div className="clients-grid">
           <div className="clients-card">
             <div className="quote-icon">
-              <img src="images/uppgift HTML & CSS/quotes.svg" alt="quote-icon" />
+              <img src={Quoteicon} alt="quote-icon" />
             </div>
             <div className="stars">
-              <img src="images/uppgift HTML & CSS/rating.svg" alt="stars" />
+              <img src={Stars} alt="stars" />
             </div>
             <p>
               Sit pretium aliquam tempor, orci dolor sed maecenas rutrum sagittis. Laoreet posuere rhoncus, egestas lacus, egestas justo aliquam vel. Nisi vitae lectus hac hendrerit. Montes justo turpis sit amet.
             </p>
             <div className="client-info">
-              <img src="images/uppgift HTML & CSS/Fannie.svg" alt="Fannie Summers" className="client-photo" />
+              <img src={Fannie} alt="Fannie Summers" className="client-photo" />
               <div>
                 <h4>Fannie Summers</h4>
                 <p>Designer</p>
@@ -29,16 +34,16 @@ const Page5 = () => {
 
           <div className="clients-card">
             <div className="quote-icon">
-              <img src="images/uppgift HTML & CSS/quotes.svg" alt="quote-icon" />
+              <img src={Quoteicon} alt="quote-icon" />
             </div>
             <div className="stars">
-              <img src="images/uppgift HTML & CSS/rating (1).svg" alt="stars" />
+              <img src={Stars2} alt="stars" />
             </div>
             <p>
               Nunc senectus leo vel venenatis accumsan vestibulum sollicitudin amet porttitor. Nisl bibendum nulla tincidunt eu enim ornare dictumst sit amet. Dictum pretium dolor tincidunt egestas eget nunc.
             </p>
             <div className="client-info">
-              <img src="images/uppgift HTML & CSS/Albert.svg" alt="Albert Flores" className="client-photo" />
+              <img src={Albert} alt="Albert Flores" className="client-photo" />
               <div>
                 <h4>Albert Flores</h4>
                 <p>Developer</p>

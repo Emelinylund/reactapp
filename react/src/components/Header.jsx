@@ -1,12 +1,12 @@
 import React from 'react';
-
+import Siliconlogo from '../images/logo.svg'
 const Header = () => {
   return (
     <header>
       <div id="wrapper">
         <div className="navbar"> 
           <a id="logo" href="index.html">
-            <img src="images/logo.svg" alt="Silicon Logotype" />
+            <img src={Siliconlogo} alt="Silicon Logotype" />
           </a>
 
           <nav id="main-menu" className="nav-bar"> 
@@ -35,7 +35,7 @@ const Header = () => {
             <i className="fa-solid fa-bars"></i>
           </button>
         </div>
-      </div>
+        </div>
     </header>
   );
 };

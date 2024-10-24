@@ -1,11 +1,18 @@
 import React from 'react';
+import Apppreview from '../images/image.svg'
+import Creditcard from '../images/credit-card.svg'
+import Shield from '../images/shield.svg'
+import Barsgraphic from '../images/bars-graphic.svg'
+import Communication from '../images/communication.svg'
+import Wallet from '../images/wallet.svg'
+import Happy from '../images/happy.svg'
 
 const Page2 = () => {
   return (
     <section id="page2">
       <div className="container3" id="p2">
         <div className="app-features-content">
-          <img src="images/uppgift HTML & CSS/image.svg" id="app-preview" alt="app-preview" />
+          <img src={Apppreview} id="app-preview" alt="app-preview" />
         </div>
 
         <div id="features-list">
@@ -20,7 +27,7 @@ const Page2 = () => {
           <ul className="feature-items">
             <li className="feature-item-li">
               <div className="icon-holder">
-                <img src="images/uppgift HTML & CSS/credit-card.svg" alt="Easy Payments Icon" />
+                <img src={Creditcard} alt="Easy Payments Icon" />
               </div>
               <div className="text-item">
                 <h4>Easy Payments</h4>
@@ -30,7 +37,7 @@ const Page2 = () => {
 
             <li className="feature-item-li">
               <div className="icon-holder">
-                <img src="images/uppgift HTML & CSS/shield.svg" alt="Data Security Icon" />
+                <img src={Shield} alt="Data Security Icon" />
               </div>
               <div className="text-item">
                 <h4>Data Security</h4>
@@ -40,7 +47,7 @@ const Page2 = () => {
 
             <li className="feature-item-li">
               <div className="icon-holder">
-                <img src="images/uppgift HTML & CSS/bars-graphic.svg" alt="Cost Statistics Icon" />
+                <img src={Barsgraphic} alt="Cost Statistics Icon" />
               </div>
               <div className="text-item">
                 <h4>Cost Statistics</h4>
@@ -50,7 +57,7 @@ const Page2 = () => {
 
             <li className="feature-item-li">
               <div className="icon-holder">
-                <img src="images/uppgift HTML & CSS/communication.svg" alt="Support 24/7 Icon" />
+                <img src={Communication} alt="Support 24/7 Icon" />
               </div>
               <div className="text-item">
                 <h4>Support 24/7</h4>
@@ -60,7 +67,7 @@ const Page2 = () => {
 
             <li className="feature-item-li">
               <div className="icon-holder">
-                <img src="images/uppgift HTML & CSS/wallet.svg" alt="Regular Cashback Icon" />
+                <img src={Wallet} alt="Regular Cashback Icon" />
               </div>
               <div className="text-item">
                 <h4>Regular Cashback</h4>
@@ -70,7 +77,7 @@ const Page2 = () => {
 
             <li className="feature-item-li">
               <div className="icon-holder">
-                <img src="images/uppgift HTML & CSS/happy.svg" alt="Top Standards Icon" />
+                <img src={Happy} alt="Top Standards Icon" />
               </div>
               <div className="text-item">
                 <h4>Top Standards</h4>

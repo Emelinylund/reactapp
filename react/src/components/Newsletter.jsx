@@ -1,4 +1,5 @@
 import React from 'react';
+import Notification from '../images/notification.svg'
 
 const Newsletter = () => {
   return (
@@ -6,7 +7,7 @@ const Newsletter = () => {
       <div className="newsletter-container">
         <div className="newsletter-content">
           
-          <img src="/images/notification.svg" alt="Notification Bell" />
+          <img src={Notification} alt="Notification Bell" />
           <h3>
             Subscribe to our newsletter to stay<br />
             informed about latest updates

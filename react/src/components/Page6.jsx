@@ -1,4 +1,8 @@
 import React from 'react';
+import Phone from '../images/phone.svg'
+import Writing from '../images/writing.svg'
+import Arrow from '../images/arrow.svg'
+import Arrowdown from '../images/arrow down.svg'
 
 const Page6 = () => {
   return (
@@ -9,12 +13,12 @@ const Page6 = () => {
           <p>Still have unanswered questions and need to get<br />in touch?</p>
           <div className="contact-options">
             <div className="contact-option">
-              <img src="images/uppgift HTML & CSS/phone.svg" alt="phone" />
+              <img src={Phone} alt="phone" />
               <p>Still have questions?</p>
               <a href="#">Contact us <i className="fa fa-arrow-right"></i></a>
             </div>
             <div className="contact-option">
-              <img src="images/uppgift HTML & CSS/writing.svg" alt="writing" />
+              <img src={Writing} alt="writing" />
               <p>Don't like phone calls?</p>
               <a href="#" id="green">Contact us <i className="fa fa-arrow-right"></i></a>
             </div>
@@ -25,19 +29,19 @@ const Page6 = () => {
             <div className="accordion-item">
               <div className="accordion-title">
                 <h4>Is any of my personal information stored in the App?</h4>
-                <img src="images/uppgift HTML & CSS/arrow.svg" alt="arrow" />
+                <img src={Arrow} alt="arrow" />
               </div>
             </div>
             <div className="accordion-item">
               <div className="accordion-title">
                 <h4>What formats can I download my transaction history in?</h4>
-                <img src="images/uppgift HTML & CSS/arrow.svg" alt="arrow" />
+                <img src={Arrow} alt="arrow" />
               </div>
             </div>
             <div className="accordion-item open">
               <div className="accordion-title">
                 <h4>Can I schedule future transfers?</h4>
-                <img src="images/uppgift HTML & CSS/arrow down.svg" alt="arrow" />
+                <img src={Arrowdown} alt="arrow" />
               </div>
               <div className="accordion-content">
                 <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.</p>
@@ -46,19 +50,19 @@ const Page6 = () => {
             <div className="accordion-item">
               <div className="accordion-title">
                 <h4>When can I use Banking App services?</h4>
-                <img src="images/uppgift HTML & CSS/arrow.svg" alt="arrow" />
+                <img src={Arrow} alt="arrow" />
               </div>
             </div>
             <div className="accordion-item">
               <div className="accordion-title">
                 <h4>Can I create my own password that is easy for me to remember?</h4>
-                <img src="images/uppgift HTML & CSS/arrow.svg" alt="arrow" />
+                <img src={Arrow} alt="arrow" />
               </div>
             </div>
             <div className="accordion-item">
               <div className="accordion-title">
                 <h4>What happens if I forget or lose my password?</h4>
-                <img src="images/uppgift HTML & CSS/arrow.svg" alt="arrow" />
+                <img src={Arrow} alt="arrow" />
               </div>
             </div>
           </div>
