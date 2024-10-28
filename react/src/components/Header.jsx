@@ -1,6 +1,8 @@
 import React from 'react';
 import Siliconlogo from '../images/logo.svg'
 const Header = () => {
+
+
   return (
     <header>
       <div id="wrapper">
@@ -13,13 +15,6 @@ const Header = () => {
             <a className="nav-link" href="#">Features</a> 
           </nav>
 
-          <div id="darkmode-toggle-switch" className="btn-toggle-switch"> 
-            <span className="label">Dark mode</span> 
-            <label htmlFor="darkmode-switch" className="toggle-switch">
-              <input id="darkmode-switch" type="checkbox" />
-              <span className="slider round"></span>
-            </label>
-          </div>
 
           <a id="auth-signin" href="#" className="btn-primary"> 
             <i className="fa-regular fa-user"></i>
@@ -27,7 +22,7 @@ const Header = () => {
           </a>
 
           <button
-            className="btn-mobile" 
+            className="btn-mobile"
             aria-controls="main-menu"
             aria-expanded="false"
             aria-label="toggle navigation"
