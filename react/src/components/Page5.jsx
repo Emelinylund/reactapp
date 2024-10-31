@@ -6,21 +6,21 @@ import Stars2 from '../images/rating (1).svg'
 import Albert from '../images/albert.svg'
 
 const Page5 = () => {
-  const [testimonials, setTestimonials] = useState([]);
+  const [testimonials, setTestimonials] = useState([])
 
   useEffect(() => {
 
     const fetchTestimonials = async () => {
       try {
         const res = await fetch('https://win24-assignment.azurewebsites.net/api/testimonials')
-        const data = await res.json();
-        setTestimonials(data);
+        const data = await res.json()
+        setTestimonials(data)
       } catch (error) {
-        console.error('Error fetching testimonials:', error);
+        console.error('Error fetching testimonials:', error)
       }
     };
 
-    fetchTestimonials();
+    fetchTestimonials()
   }, []);
   return (
     <section id="page5">
@@ -72,4 +72,4 @@ const Page5 = () => {
   );
 }
 
-export default Page5;
+export default Page5

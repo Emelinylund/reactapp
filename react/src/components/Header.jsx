@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import Siliconlogo from '../images/logo.svg'
 const Header = () => {
 
@@ -35,4 +35,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Header

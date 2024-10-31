@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import Phone from '../images/phone.svg'
 import Writing from '../images/writing.svg'
 import Arrow from '../images/arrow.svg'
@@ -72,4 +72,4 @@ const Page6 = () => {
   );
 }
 
-export default Page6;
+export default Page6

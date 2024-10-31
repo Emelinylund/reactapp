@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import Apppreview from '../images/image.svg'
 import Creditcard from '../images/credit-card.svg'
 import Shield from '../images/shield.svg'
@@ -91,4 +91,4 @@ const Page2 = () => {
   );
 };
 
-export default Page2;
+export default Page2

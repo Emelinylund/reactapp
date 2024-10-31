@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import Iphone1 from '../images/iPhone 12 Pro rad1.svg'
 import Iphonemitt from '../images/iPhone 12 Pro mitt.svg'
 import Iphone2 from '../images/iPhone 12 Pro rad2.svg'
@@ -36,4 +36,4 @@ const Page3 = () => {
   );
 };
 
-export default Page3;
+export default Page3

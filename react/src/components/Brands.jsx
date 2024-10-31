@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import Brand1 from '../images/brand-1.svg'
 import Brand2 from '../images/Brand-2.svg'
 import Brand3 from '../images/Brand-3.svg'
@@ -33,4 +33,4 @@ const Brands = () => {
   );
 }
 
-export default Brands;
+export default Brands

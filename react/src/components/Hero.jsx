@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import Appstore from '../images/appstore (2).svg'
 import Googleplay from '../images/googleplay (2).svg'
 import Phoneback from '../images/iphone 12 Probakom1.svg'
@@ -34,4 +34,4 @@ const Hero = () => {
   );
 }
 
-export default Hero;
+export default Hero

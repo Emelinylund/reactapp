@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import Sendmoney from '../images/image send money to.svg'
 import Contactcard from '../images/kontaktokort.svg'
 import Cardicon from '../images/credit-card.svg'
@@ -61,4 +61,4 @@ const Page4 = () => {
   );
 }
 
-export default Page4;
+export default Page4
