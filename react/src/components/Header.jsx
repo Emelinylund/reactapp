@@ -1,6 +1,6 @@
-import React from 'react';
-import Siliconlogo from '../images/logo.svg';
-import DarkModeSwitch from './DarkModeSwitch'; 
+import React from 'react'
+import Siliconlogo from '../images/logo.svg'
+import DarkModeSwitch from './DarkModeSwitch';
 
 const Header = () => {
   return (
@@ -41,5 +41,5 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Header
 

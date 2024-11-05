@@ -1,28 +1,28 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
 
 const DarkModeSwitch = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false)
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem('theme');
+    const savedTheme = localStorage.getItem('theme')
     if (savedTheme === 'dark') {
-      setIsDarkMode(true);
-      document.body.classList.add('dark-theme');
+      setIsDarkMode(true)
+      document.body.classList.add('dark-theme')
     }
-  }, []);
+  }, [])
 
   const darkModeToggle = () => {
-    const newMode = !isDarkMode;
-    setIsDarkMode(newMode);
+    const newMode = !isDarkMode
+    setIsDarkMode(newMode)
 
     if (newMode) {
-      document.body.classList.add('dark-theme');
-      localStorage.setItem('theme', 'dark');
+      document.body.classList.add('dark-theme')
+      localStorage.setItem('theme', 'dark')
     } else {
-      document.body.classList.remove('dark-theme');
-      localStorage.setItem('theme', 'light');
+      document.body.classList.remove('dark-theme')
+      localStorage.setItem('theme', 'light')
     }
-  };
+  }
 
   return (
     <div id="darkmode-toggle-switch" className="btn-toggle-switch">
@@ -38,7 +38,7 @@ const DarkModeSwitch = () => {
         <span className="slider round"></span>
       </label>
     </div>
-  );
-};
+  )
+}
 
-export default DarkModeSwitch;
+export default DarkModeSwitch
