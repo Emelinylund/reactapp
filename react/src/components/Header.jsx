@@ -1,8 +1,8 @@
-import React from 'react'
-import Siliconlogo from '../images/logo.svg'
+import React from 'react';
+import Siliconlogo from '../images/logo.svg';
+import DarkModeSwitch from './DarkModeSwitch'; 
+
 const Header = () => {
-
-
   return (
     <header>
       <div id="wrapper">
@@ -16,6 +16,8 @@ const Header = () => {
           </nav>
 
 
+          <DarkModeSwitch />
+
           <a id="auth-signin" href="#" className="btn-primary"> 
             <i className="fa-regular fa-user"></i>
             <span>Sign in / up</span>
@@ -25,14 +27,19 @@ const Header = () => {
             className="btn-mobile"
             aria-controls="main-menu"
             aria-expanded="false"
-            aria-label="toggle navigation"
-          >
+            aria-label="toggle navigation">
+
             <i className="fa-solid fa-bars"></i>
           </button>
+
+          
+
+
         </div>
-        </div>
+      </div>
     </header>
   );
 };
 
-export default Header
+export default Header;
+

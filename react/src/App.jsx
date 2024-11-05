@@ -11,7 +11,7 @@ import Page5 from'./components/Page5'
 import Page6 from'./components/Page6'
 import Newsletter from'./components/Newsletter'
 import Footer from'./components/Footer'
-import DarkModeSwitch from'./components/DarkModeSwitch'
+
 
 
 function App() {
@@ -20,7 +20,6 @@ function App() {
   return (
     <>
       <Header />
-      <DarkModeSwitch />
       <Homenav />
       <Hero />
       <Brands />
