@@ -1023,13 +1023,15 @@ a:hover {
 }
 
 .accordion-title:hover {
-  background-color: #F3F4F6; 
+  background-color: #F3F4F6;
+  
 }
 
 .accordion-title h4 {
   font-size: 1rem;
   font-weight: bold;
   margin: 0; 
+  
 }
 
 .accordion-title img {

@@ -26,7 +26,7 @@ const ClientCard = ({ comment, avatarUrl, author, jobRole, starRating }) => {
 }
 
 const Page5 = () => {
-  const [testimonials, setTestimonials] = useState([]);
+  const [testimonials, setTestimonials] = useState([])
 
   useEffect(() => {
     const fetchTestimonials = async () => {

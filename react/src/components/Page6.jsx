@@ -1,10 +1,50 @@
-import React from 'react'
-import Phone from '../images/phone.svg'
-import Writing from '../images/writing.svg'
-import Arrow from '../images/arrow.svg'
-import Arrowdown from '../images/arrow down.svg'
+import React, { useState, useEffect } from 'react';
+import Phone from '../images/phone.svg';
+import Writing from '../images/writing.svg';
+import Arrow from '../images/arrow.svg';
+import ArrowDown from '../images/arrow down.svg';
 
+// FAQItem-komponent för att hantera varje FAQ-fråga
+const FAQItem = ({ title, content }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleOpen = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <div className={`accordion-item ${isOpen ? 'open' : ''}`}>
+      <div className="accordion-title" onClick={toggleOpen}>
+        <h4>{title}</h4>
+        <img src={isOpen ? ArrowDown : Arrow} alt="toggle icon" style={{ transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)' }} />
+      </div>
+      {isOpen && (
+        <div className="accordion-content">
+          <p>{content}</p>
+        </div>
+      )}
+    </div>
+  )
+}
+
+// Page6-komponent för att hantera API-anropet och rendera FAQ-sektionen
 const Page6 = () => {
+  const [faqs, setFaqs] = useState([])
+
+  useEffect(() => {
+    const fetchFaqs = async () => {
+      try {
+        const response = await fetch('https://win24-assignment.azurewebsites.net/api/faq');
+        const data = await response.json();
+        setFaqs(data);
+      } catch (error) {
+        console.error('Error fetching FAQs:', error);
+      }
+    };
+
+    fetchFaqs();
+  }, []);
+
   return (
     <section id="page6">
       <div className="faq">
@@ -24,52 +64,20 @@ const Page6 = () => {
             </div>
           </div>
         </div>
+
         <div className="faq-right">
           <div className="accordion">
-            <div className="accordion-item">
-              <div className="accordion-title">
-                <h4>Is any of my personal information stored in the App?</h4>
-                <img src={Arrow} alt="arrow" />
-              </div>
-            </div>
-            <div className="accordion-item">
-              <div className="accordion-title">
-                <h4>What formats can I download my transaction history in?</h4>
-                <img src={Arrow} alt="arrow" />
-              </div>
-            </div>
-            <div className="accordion-item open">
-              <div className="accordion-title">
-                <h4>Can I schedule future transfers?</h4>
-                <img src={Arrowdown} alt="arrow" />
-              </div>
-              <div className="accordion-content">
-                <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.</p>
-              </div>
-            </div>
-            <div className="accordion-item">
-              <div className="accordion-title">
-                <h4>When can I use Banking App services?</h4>
-                <img src={Arrow} alt="arrow" />
-              </div>
-            </div>
-            <div className="accordion-item">
-              <div className="accordion-title">
-                <h4>Can I create my own password that is easy for me to remember?</h4>
-                <img src={Arrow} alt="arrow" />
-              </div>
-            </div>
-            <div className="accordion-item">
-              <div className="accordion-title">
-                <h4>What happens if I forget or lose my password?</h4>
-                <img src={Arrow} alt="arrow" />
-              </div>
-            </div>
+            {faqs.map((faq) => (
+              <FAQItem key={faq.id} title={faq.title} content={faq.content} />
+            ))}
           </div>
         </div>
       </div>
     </section>
   );
-}
+};
 
-export default Page6
+export default Page6;
+
+
+
