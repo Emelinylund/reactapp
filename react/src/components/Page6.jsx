@@ -1,16 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import Phone from '../images/phone.svg';
-import Writing from '../images/writing.svg';
-import Arrow from '../images/arrow.svg';
-import ArrowDown from '../images/arrow down.svg';
+import React, { useState, useEffect } from 'react'
+import Phone from '../images/phone.svg'
+import Writing from '../images/writing.svg'
+import Arrow from '../images/arrow.svg'
+import ArrowDown from '../images/arrow down.svg'
 
-// FAQItem-komponent för att hantera varje FAQ-fråga
 const FAQItem = ({ title, content }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   const toggleOpen = () => {
-    setIsOpen(!isOpen);
-  };
+    setIsOpen(!isOpen)
+  }
 
   return (
     <div className={`accordion-item ${isOpen ? 'open' : ''}`}>
@@ -27,23 +26,22 @@ const FAQItem = ({ title, content }) => {
   )
 }
 
-// Page6-komponent för att hantera API-anropet och rendera FAQ-sektionen
 const Page6 = () => {
   const [faqs, setFaqs] = useState([])
 
   useEffect(() => {
     const fetchFaqs = async () => {
       try {
-        const response = await fetch('https://win24-assignment.azurewebsites.net/api/faq');
-        const data = await response.json();
+        const response = await fetch('https://win24-assignment.azurewebsites.net/api/faq')
+        const data = await response.json()
         setFaqs(data);
       } catch (error) {
-        console.error('Error fetching FAQs:', error);
+        console.error('Error fetching FAQs:', error)
       }
-    };
+    }
 
-    fetchFaqs();
-  }, []);
+    fetchFaqs()
+  }, [])
 
   return (
     <section id="page6">
@@ -74,10 +72,10 @@ const Page6 = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Page6;
+export default Page6
 
 
 
