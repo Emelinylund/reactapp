@@ -19,6 +19,13 @@ body {
   transition: var(--transition-time);
 }
 
+body.light-theme .dark-mode-image {
+  display: none;
+}
+
+body.dark-theme .light-mode-image {
+  display: none;
+}
 
 
 .dark-theme {
