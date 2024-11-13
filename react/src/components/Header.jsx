@@ -1,6 +1,6 @@
 import React from 'react'
 import Siliconlogo from '../images/logo.svg'
-import DarkModeSwitch from './DarkModeSwitch';
+import DarkModeSwitch from './DarkModeSwitch'
 
 const Header = () => {
   return (
