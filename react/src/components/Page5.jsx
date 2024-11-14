@@ -14,11 +14,11 @@ const ClientCard = ({ comment, avatarUrl, author, jobRole, starRating }) => {
       <div className="stars" style={{ display: 'flex' }}>
         
         {Array.from({ length: starRating }, (_, index) => (
-          <img key={`filled-${index}`} src={StarIcon} alt="filled star" style={{ marginRight: '4px' }} />
+          <img key={`filled-${index}`} src={StarIcon} alt="filled star"/>
         ))}
         
         {Array.from({ length: totalStars - starRating }, (_, index) => (
-          <img key={`empty-${index}`} src={EmptyStarIcon} alt="empty star" style={{ marginRight: '4px' }} />
+          <img key={`empty-${index}`} src={EmptyStarIcon} alt="empty star"/>
         ))}
       </div>
 
