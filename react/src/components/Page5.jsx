@@ -1,18 +1,27 @@
 import React, { useState, useEffect } from 'react'
 import QuoteIcon from '../images/quotes.svg'
-import StarIcon from '../images/star.svg' 
+import StarIcon from '../images/star.svg'
+import EmptyStarIcon from '../images/empty-star.svg'
 
 const ClientCard = ({ comment, avatarUrl, author, jobRole, starRating }) => {
+  const totalStars = 5
+
   return (
     <div className="clients-card">
       <div className="quote-icon">
         <img src={QuoteIcon} alt="quote-icon" />
       </div>
       <div className="stars" style={{ display: 'flex' }}>
+        
         {Array.from({ length: starRating }, (_, index) => (
-          <img key={index} src={StarIcon} alt="star" style={{ marginRight: '4px' }} />
+          <img key={`filled-${index}`} src={StarIcon} alt="filled star" style={{ marginRight: '4px' }} />
+        ))}
+        
+        {Array.from({ length: totalStars - starRating }, (_, index) => (
+          <img key={`empty-${index}`} src={EmptyStarIcon} alt="empty star" style={{ marginRight: '4px' }} />
         ))}
       </div>
+
       <p>{comment}</p>
       <div className="client-info">
         <img src={avatarUrl} alt={`${author}'s avatar`} className="client-photo" />
@@ -33,7 +42,7 @@ const Page5 = () => {
       try {
         const res = await fetch('https://win24-assignment.azurewebsites.net/api/testimonials')
         const data = await res.json()
-        setTestimonials(data)
+        setTestimonials(data);
       } catch (error) {
         console.error('Error fetching testimonials:', error)
       }
