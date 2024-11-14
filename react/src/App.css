@@ -1067,14 +1067,15 @@ a:hover {
 
 
 
+
 #newsletter-section {
   background-color: var(--color-white);
   padding: 3rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
+
 
 .newsletter-container {
   display: flex;
@@ -1088,6 +1089,7 @@ a:hover {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
 }
 
+
 .newsletter-content {
   display: flex;
   align-items: center;
@@ -1095,7 +1097,7 @@ a:hover {
 }
 
 .newsletter-content img {
-  width: 40;
+  width: 40px;
   height: 40px;
   margin-right: 3rem;
 }
@@ -1106,28 +1108,42 @@ a:hover {
   color: var(--color-black);
 }
 
+
 .newsletter-input {
   display: flex;
-  
+  align-items: center;
 }
 
 .newsletter-input input {
   padding: 1rem;
+  padding-left: 2.5rem;
   border: 1px solid #d1d5db;
   border-radius: 4px;
   width: 300px;
-  padding-left: 30px;
+  font-size: 1rem;
 }
+
 
 .newsletter-input button {
   padding: 1rem 2rem;
-  margin-top: 0rem;
+  margin-top: -1.5rem;
   background-color: var(--color-primary);
   color: var(--color-white);
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
+.newsletter-input button:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.newsletter-input button:active {
+  transform: scale(0.98);
+}
+
 
 .newsletter-input .input-icon {
   position: relative;
@@ -1137,9 +1153,59 @@ a:hover {
 
 .newsletter-input .input-icon i {
   position: absolute;
-  left: 10px; 
-  color: #B4B7C9; 
+  left: 10px;
+  color: #B4B7C9;
   font-size: 1rem;
+}
+
+
+.form-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group span {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  min-height: 1em; 
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.informationbox {
+  text-align: center;
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+  background-color: var(--color-gray100);
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.informationbox h1 {
+  font-size: 1.5rem;
+  color: var(--color-black);
+  margin-bottom: 1rem;
+}
+
+.btn-purple {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  width: auto; 
+  max-width: 150px; 
+  margin: auto;
+  display: block; 
 }
 
 
